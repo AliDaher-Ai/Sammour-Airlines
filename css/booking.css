@@ -1,0 +1,362 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
+
+* {
+    margin: 0px 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+ 
+
+  #navbar {
+    overflow: hidden;
+    background-color: #608bc1;
+    display: flex;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 58px;
+    z-index: 999;
+  }
+  
+  .logo {
+    padding-top: 18px;
+    margin-left: 30px;
+  }
+  
+  #navbar .container {
+    width: 80%;
+    margin: auto;
+    padding: 15px 10px;
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  #contact {
+    align-self: self-end;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+  }
+  #navbar li {
+    display: inline-block;
+    list-style: none;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  #navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  #navbar .container a:hover {
+    color: #333;
+    border-radius: 10px;
+  }
+  
+.background-shape {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/wing-airplane-with-city-background.jpg') no-repeat center center/cover;
+    clip-path: url(#waveClip);
+}
+
+.rightSide{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 100vh;
+}
+
+.leftSide{
+    padding-top: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50vw;
+    height: 100vw;
+}
+
+.sectionBooking{
+    margin-left: 75px;
+}
+.sectionBooking h1{
+    color: #608bc1;
+    font-size: 30px;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+.booking{
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+}
+.booking i{
+    margin: 10px;
+    color: #608bc1;
+    width: 20px;
+    font-size: larger;
+    font-display: center;
+    align-items: center;
+}
+.optionbox{
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+button.Confirm{
+    background-color: #608bc1;
+    width: 540px;
+    border-radius: 6px;
+    border-color: #3e6a9f;
+    height: 40px;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+
+.error {
+    color: rgb(0, 180, 255);
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+  }
+.slider{
+    margin-top: 60px;
+    margin-left: 75px;
+    width: 600px;
+}
+.sliderheader{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  
+}
+.sliderheader h2{
+    color: #3e6a9f;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+.slider-btn{
+    background: none;
+    color: #608bc1;
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: larger;
+    cursor: pointer;
+}
+.slider-btn:hover{
+    background-color: rgb(232, 232, 232);
+}
+.slider-btn img{
+    height: 20px;
+    width: 20px;
+}
+.slider-container{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.slider-content{
+    display: flex;
+    gap: 15px;
+    border-radius: 6px;
+    transition: transform 0.4s ease-in-out;
+}
+.slider-image{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    overflow:hidden;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgb(0,0,0,1.0);
+    position: relative;
+}
+.slider-image img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.info{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+    padding-top: 48px;
+}
+.info i{
+    width: 27px;
+    height: 27px;
+}
+.info p{
+   
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+.info:hover{
+    opacity: 1;
+}
+
+.message-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .message-window {
+      background: #fff;
+      padding: 20px;
+      width: 300px;
+      max-width: 90%;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      animation: 0.3s ease-in-out;
+    }
+
+    .message-header {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+    .message-body {
+      font-size: 14px;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: #333;
+    }
+    
+
+    .message-footer button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .message-footer button:hover {
+      background: #0056b3;
+    }
+    
+ 
+       
+
+    @media (max-width: 768px) {
+        body {
+            margin: 0;
+            font-size: 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .leftSide {
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+    
+        section {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    
+        h1 {
+            font-size: 20px;
+            text-align: center;
+        }
+    
+        .booking {
+            align-items: flex-start;
+            gap: 10px;
+        }
+    
+        .optionbox {
+            width: 50%; 
+        }
+    
+        button.Confirm {
+            width: 100%;
+        }
+    
+        .slider {
+            width: 100%;
+            margin-top: 30px;
+        }
+    
+        .slider-container {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .slider-content {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        
+    
+        .slider-image {
+            width: 100px;
+            height: 100px; 
+        }
+    
+        .sliderheader{
+            display: flex;
+            align-items: center;
+            font-size: x-small;
+            gap: 20px;
+        }
+    
+        .slider-btn {
+            display: none;
+        }
+    
+        .message-window {
+            width: 90%;
+        }
+    }
+    

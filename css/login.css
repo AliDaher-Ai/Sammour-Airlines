@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #93B7BE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+    background-color: #ffffff;
+    border-radius: 1.6vh;
+    overflow: hidden;
+    box-shadow: 0vh 0.8vh 2vh rgba(0, 0, 0, 0.2);
+}
+
+.left-panel {
+    background: linear-gradient(90deg, #2D3047, #686c8a);
+    flex: 1;
+    color: white;
+    padding: 4vh;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.left-panel h2 {
+    margin-bottom: 4vh;
+}
+
+.social-btn {
+    width: 80%;
+    margin: 2vh auto;
+    padding: 2vh;
+    border: none;
+    border-radius: 0.8vh;
+    color: white;
+    font-size: 2.4vh;
+    cursor: pointer;
+    display: block;
+    transition: background-color 0.3s;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+.social-btn i {
+    margin-right: 2vh;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.twitter {
+    background-color: #1da1f2;
+}
+
+.google {
+    background-color: #db4437;
+}
+
+.behance {
+    background-color: #1769ff;
+}
+
+.social-btn:hover {
+    opacity: 0.9;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 4vh;
+}
+
+.right-panel h2 {
+    text-align: center;
+    margin-bottom: 1.6vh;
+    color: #E0CA3C;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-container {
+    position: relative;
+    width: 80%;
+    margin: 2vh 2vh;
+}
+
+.input-container .material-icons {
+    position: absolute;
+    left: 2vh;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.2vh;
+    color: #aaa;
+}
+
+form input {
+    width: 100%;
+    padding: 2vh 2vh 2vh 7vh;
+    font-size: 2.4vh;
+    border: 0.2vh solid #ddd;
+    border-radius: 0.8vh;
+}
+
+/* Style for input fields */
+input::placeholder {
+    font-family: 'Poppins', sans-serif; /* Change the font */
+    font-size: 2.4vh; /* Adjust the font size */
+    color: #888; /* Set the color of the placeholder */
+    font-weight: 400; /* Set the font weight */
+    opacity: 1; /* Set the opacity of the placeholder (default is 0.5) */
+}
+
+input:focus::placeholder {
+    color: #555; /* Change the placeholder color when the input is focused */
+    opacity: 0.7; /* Adjust the opacity when the input is focused */
+}
+
+form button {
+    width: 80%;
+    padding: 2vh;
+    font-size: 2.4vh;
+    background-color: #048A81;
+    color: white;
+    border: none;
+    border-radius: 0.8vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+form button:hover {
+    background-color: #35b6ad;
+}

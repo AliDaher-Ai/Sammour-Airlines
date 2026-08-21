@@ -1,0 +1,168 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e9f1f7, #f3f7fa);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 20px;
+}
+
+/* Contact Container */
+.contact-container {
+  background: #ffffff;
+  padding: 50px 40px;
+  border-radius: 12px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 750px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+  animation: slideUp 0.5s ease-out;
+}
+
+.contact-container:hover {
+  transform: translateY(-8px);
+}
+
+/* Contact Header */
+.contact-header h1 {
+  font-size: 2.8rem;
+  color: #1e2a38;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1.5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-header p {
+  font-size: 1.2rem;
+  color: #777;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Form Styling */
+.contact-form .form-group {
+  margin-bottom: 28px;
+  position: relative;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #444;
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 16px 22px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background-color: #f8f9fb;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+  max-height: 350px;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 16px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-4px);
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+/* Input Focus Effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0056b3;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.2);
+}
+
+/* Keyframe for Animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 40px;
+  }
+
+  .contact-header h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact-header p {
+    font-size: 1.1rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}

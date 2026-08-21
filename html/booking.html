@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SammourAirlines</title>
+    <link rel="stylesheet" href="../css/booking.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <script src="../js/booking.js"></script>
+</head>
+
+<body>
+ 
+  <nav id="navbar">
+    <div class="logo">
+        <a  href="../index.html"> <img src="../images/logo.png" alt="" width="180px"
+      ></a>
+    </div>
+    <div class="container">
+      <ul>
+        <li>
+           <a href="booking.html">Booking</a>
+        </li>
+        <li><a  href="login.html">Sign Up</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+    <section class="rightSide">
+     <div class="background-shape"></div>
+     <svg class="svg-mask">
+       <defs>
+         <clipPath id="waveClip" clipPathUnits="objectBoundingBox">
+           <path d="M1,0 H0.7 Q0.3,0.2 0.5,0.5 T0,1 H0,1 Z" />
+         </clipPath>
+       </defs>
+     </svg>
+    </section>
+
+  <section class="leftSide">
+    <section class="sectionBooking">
+        <div>
+            <h1>
+                Book your next adventure today <br> Take off to your dream destination with ease!
+            </h1>
+        </div>
+        <div>
+        <form class="return-oneway">
+            <Label><input type="radio" id="return" name="return-oneway" value="return">Return</Label>
+            <Label><input type="radio" id="Oneway" name="return-oneway" value="Oneway">Oneway</Label>
+        </form>
+        </div>
+        <div class="booking">
+        <select name="Country" id="Takeoff" class="optionbox" required>
+            <option value="" disabled selected>Takeoff</option>
+            <option value="Iran">Iran</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Lebanon"> Lebanon</option>
+            <option value="Canada">Canada</option>
+            <option value="Germany">Germany</option>
+            <option value="Spain">Spain</option>
+            <option value="Switzerland">Switzerland</option>
+       </select>
+       <i class="fi fi-sr-plane-alt"></i>     
+       <select name="Country" id="Arrival" class="optionbox" required>
+         <option value="" disabled selected>Arrival</option>
+         <option value="iran">Iran</option>
+            <option value="maldives">Maldives</option>
+            <option value="lebanon"> Lebanon</option>
+            <option value="canada">Canada</option>
+            <option value="germany">Germany</option>
+            <option value="spain">Spain</option>
+            <option value="switzerland">Switzerland</option>
+       </select>
+    </div>
+    <div class="booking">
+            <input type="date" id="upToDate" class="optionbox" required>
+            <i class="fi fi-sr-calendar-days"></i>           
+            <input type="date" id="UpToDate" class="optionbox" required>
+    </div>
+    <div class="booking">
+        <button onclick="openModal()" class="Confirm">Confirm</button>
+    </div>
+    <div class="error" id="name-error"> Fill the requirements!</div>
+    </section>
+    <section class="slider">
+        <div class="sliderheader">
+         <h2>Some of the best tourrist places in the world</h2>
+         <div>
+           <button class="slider-btn" onclick="slideRight()">
+            <i class="fi fi-sr-angle-left"></i>
+           </button>
+           <button class="slider-btn" onclick="slideLeft()">
+            <i class="fi fi-sr-angle-right"></i>
+           </button> 
+         </div>
+        </div>
+        <div class="slider-container">
+            <div class="slider-content">
+                <a href="iran.html">
+                 <div class="slider-image"><img src="../images/Tehran.jpg" alt="Tehran">
+                  <div class="info">
+                    <p><i class="fi fi-sr-plane-departure"></i>: Iran<br></p>
+                    <p><i class="fi fi-sr-usd-circle"></i>: 1035$</p>
+                  </div>
+                 </div>
+                </a>
+                <a href="maldives.html">
+                  <div class="slider-image"><img src="../images/Maldives-Trip.jpg" alt="Maldives">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>: Maldives<br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 2875$</p>
+                   </div>
+                  </div>
+                 </a>
+                 <a href="lebanon.html">
+                  <div class="slider-image"><img src="../images/rawshe.jpg" alt="Lebanon">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>: Lebanon<br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 1380$</p>
+                   </div>
+                  </div>
+                 </a>
+                 <a href="canada.html">
+                  <div class="slider-image"><img src="../images/Canada-Trip.jpg" alt="">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>: Canada<br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 1450$</p>
+                   </div>
+                  </div>
+                 </a>
+                 <a href="germany.html">
+                  <div class="slider-image"><img src="../images/Germany-Trip.jpg" alt="">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>: Germany <br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 1550$</p>
+                   </div>
+                  </div>
+                 </a>
+                 <a href="spain.html">
+                  <div class="slider-image"><img src="../images/Spain-trip.jpg" alt="">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>:Spain <br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 1785$</p>
+                   </div>
+                  </div>
+                 </a>
+                 <a href="switzerland.html">
+                  <div class="slider-image"><img src="../images/Switzerland-Trip.jpg" alt="">
+                   <div class="info">
+                     <p><i class="fi fi-sr-plane-departure"></i>:Switzerland<br></p>
+                     <p><i class="fi fi-sr-usd-circle"></i>: 1500$</p>
+                   </div>
+                  </div>
+                 </a>
+
+              
+                
+        </div>
+    </section>
+  </section> 
+    <div class="message-overlay" id="Message">
+        <div class="message-window">
+          <div class="message-header">Confirm!</div>
+          <div class="message-body">  
+            <p> Thank you for confirming your flight</p>
+          </div>
+          <div class="message-footer">
+            <a href="../index.html"><button onclick="closeModal()">Close</button></a>
+          </div>
+        </div>
+      </div>
+</body>
+
+</html>
